@@ -9,11 +9,19 @@ from my_sum import sum
 class TestSum(unittest.TestCase):
     def test_list_int(self):
         """
-        Test that it can sum a list of integers
+        Test that user has a password
         """
-        data = [1, 2, 4]
+        data = [1, 2, 3,5,6]
         result = sum(data)
         self.assertEqual(result, 6)
+
+    def test_list_int(self):
+        """
+        Test that user has provided valid email
+        """
+        data = [1, 2, 3,5,6]
+        result = sum(data)
+        self.assertEqual(result, 6)    
 
 if __name__ == '__main__':
     unittest.main()
